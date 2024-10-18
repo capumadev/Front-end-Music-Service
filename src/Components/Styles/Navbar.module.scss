@@ -2,9 +2,10 @@
 
 .header {
   background: $dark;
-  width: 100%;
+
   height: $header-height;
   padding: 0 1.5rem;
+ 
 
   // Uso del mixin para pantallas medianas
   @include breakpoint(md) {
@@ -39,6 +40,8 @@
     font-weight: bold;
     text-decoration: none;
     color: $light;
+    height: 100%;
+    width: 20%;
   }
 
   &__nav {
@@ -156,3 +159,5 @@
     }
   }
 }
+
+

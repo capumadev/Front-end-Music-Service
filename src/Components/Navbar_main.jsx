@@ -1,11 +1,12 @@
 import styles from "./Styles/Navbar.module.scss";
+import logo from "../assets/Img/Logo.png"; // Importar la imagen
 import { BiMenuAltRight } from "react-icons/bi";
 
 const NavbarMain = () => {
   return (
     <header className={styles.header}>
       <div className={styles.header__content}>
-        <h2 className={styles.header__logo}>navbar</h2>
+        <img src={logo} alt="Logo" className={styles.header__logo} />
         <nav className={styles.header__nav}>
           <ul>
             <li>  
@@ -20,6 +21,7 @@ const NavbarMain = () => {
           </ul>
           <button>CTA PAGE</button>
         </nav>
+
         <div className={styles.header__toggle}>
           <BiMenuAltRight />
         </div>
