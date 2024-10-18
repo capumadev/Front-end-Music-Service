@@ -1,0 +1,39 @@
+//
+$Poppiens: "Poppins", sans-serif;
+//Colores
+$dark: rgb(29,29,29);
+$light: #fff;
+$primary: rgb(162,162,246);
+$bg: rgb(244,244,255);
+
+//Espacio
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+//Radio de borde
+$border-radius: 12px;
+
+//Altura del encabezado
+$header-height: 100px;
+
+@mixin breakpoint($size) {
+    @if $size == md {
+      @media (min-width: 48cm) {
+        @content;
+      }
+    }
+}@mixin breakpoint($size) {
+  @if $size == md {
+    @media (min-width: 768px) { // Cambia a 768px para pantallas medianas
+      @content;
+    }
+  } @else if $size == lg {
+    @media (min-width: 1024px) { // Pantallas grandes
+      @content;
+    }
+  } @else if $size == xl {
+    @media (min-width: 1200px) { // Pantallas extra grandes
+      @content;
+    }
+  }
+}
