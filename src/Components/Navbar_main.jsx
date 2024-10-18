@@ -19,7 +19,7 @@ const NavbarMain = () => {
               <a href="/">Nosotros</a>
             </li>
           </ul>
-          <button>CTA PAGE</button>
+          <button>Login</button>
         </nav>
 
         <div className={styles.header__toggle}>

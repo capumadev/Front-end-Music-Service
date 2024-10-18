@@ -40,8 +40,8 @@
     font-weight: bold;
     text-decoration: none;
     color: $light;
-    height: 100%;
-    width: 20%;
+    height: 80px;
+    width: 180px;
   }
 
   &__nav {
@@ -67,6 +67,7 @@
       width: auto;
       height: 100%;
       position: static;
+      margin-bottom: 1%;
     }
 
     ul {
@@ -123,6 +124,7 @@
       color: $dark;
       border: 1px solid transparent;
       transition: 0.3s ease all;
+      margin-top: 4%;
 
       &:hover {
         border-color: $primary;
