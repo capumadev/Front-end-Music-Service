@@ -1,1 +1,38 @@
 @use "../../General_styles/variables" as *;
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.header {
+  color: #ff2a2a;
+  padding: 60px 0;
+  text-align: center;
+
+  &__title {
+    font-size: 5rem;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 700;
+    letter-spacing: 2rem;
+    margin-bottom: $spacing-lg;
+
+    background: linear-gradient(90deg, black, gray, black);
+    background-size: 200% auto;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: colorShift 10s infinite linear;
+
+    @keyframes colorShift {
+      0% {
+        background-position: 200% 0;
+      }
+      100% {
+        background-position: 0 0;
+      }
+    }
+  }
+  .header__text{
+    font-size: 1.5rem;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 300;
+    color: $dark;
+  }
+}

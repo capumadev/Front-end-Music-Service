@@ -1,5 +1,8 @@
 @use "../../General_styles/variables" as *;
 
+.MainPage{
+    background-color: rgb(29,29,29);
+}
 .MainPage__img {
     background-size: cover;
     background-position: center;
