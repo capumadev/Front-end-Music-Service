@@ -28,7 +28,7 @@ const NavbarMain = () => {
 
   useEffect(() => {
     if (size.width > 768) {
-      setMenuOpen(false);
+      setMenuOpen(true);
     }
   }, [size.width  < 768 && menu_Open]);
 

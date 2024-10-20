@@ -17,12 +17,6 @@ $border-radius: 12px;
 $header-height: 100px;
 
 @mixin breakpoint($size) {
-    @if $size == md {
-      @media (min-width: 48cm) {
-        @content;
-      }
-    }
-}@mixin breakpoint($size) {
   @if $size == md {
     @media (min-width: 768px) { // Cambia a 768px para pantallas medianas
       @content;
