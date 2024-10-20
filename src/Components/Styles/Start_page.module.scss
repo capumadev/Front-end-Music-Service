@@ -12,17 +12,21 @@
     font-weight: 700;
     letter-spacing: 2rem;
     margin-bottom: $spacing-lg;
-
     background: linear-gradient(90deg, black, gray, black);
     background-size: 200% auto;
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
     animation: colorShift 10s infinite linear;
+    
+    @media (max-width: 768px) {
+      font-size: 2rem;
+      letter-spacing: 0rem;
+    }
 
     @keyframes colorShift {
       0% {
-        background-position: 200% 0;
+        background-position: 200% 10%;
       }
       100% {
         background-position: 0 0;
@@ -34,5 +38,9 @@
     font-family: 'Press Start 2P', cursive;
     font-weight: 300;
     color: $dark;
+    @media (max-width: 768px) {
+      font-size: 1rem;
+      letter-spacing: 0rem;
+    }
   }
 }
