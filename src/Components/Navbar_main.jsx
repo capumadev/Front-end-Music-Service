@@ -43,18 +43,22 @@ const NavbarMain = () => {
         <nav className={`${styles.header__nav} ${menu_Open && size.width < 768 ? styles.isMenu : ""}`}>
           <ul>
             <li>  
-              <a href="/">Home</a>
+              <a href="/">Inicio</a>
             </li>
             <li>
               <a href="/">Reseñas</a>
             </li>
             <li>
+              <a href="/">Noticias</a>
+            </li>
+            <li>
               <a href="/">Nosotros</a>
             </li>
+            <li>
+            <button>Registro</button>
+            </li>
           </ul>
-          <button>Login</button>
         </nav>
-
         <div className={styles.header__toggle}>
          {!menu_Open ? 
          (<AiOutlineClose onClick={menu_toggle} />) 
